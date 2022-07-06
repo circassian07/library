@@ -4,35 +4,49 @@
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6,1fr);
+    padding: 5% 10%;
     height: 100vh;
     background-color: lightblue;
 }
 
+/* MAIN */
 
+.main {
+    height: 100%;
+    width: 100%;
+    margin-top: 2vh;
 
-
-
-/* MARGINS */
-
-.margin_top {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 200px);
+    gap: 10px;
+    overflow: auto;
 }
 
-.margin_bottom {
-    grid-column: 1 / -1;
-    grid-row: -1 / -2;
+/* HEADER */
+
+.header {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.margin_right {
-    grid-column: -1 / -2;
-    grid-row: 2 / -2;
+/* BUTTON */
+
+.add_btn {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: rgb(204, 77, 27);
+    border-style: none;
+    color: #fff;
 }
 
-.margin_left {
-    grid-column: 1 / 2;
-    grid-row: 2 / -2;
+/* CARD STYLING */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.205);
 }
