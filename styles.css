@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: 100vh;
+    background-color: lightblue;
+}
+
+
+
+
+
+/* MARGINS */
+
+.margin_top {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.margin_bottom {
+    grid-column: 1 / -1;
+    grid-row: -1 / -2;
+}
+
+.margin_right {
+    grid-column: -1 / -2;
+    grid-row: 2 / -2;
+}
+
+.margin_left {
+    grid-column: 1 / 2;
+    grid-row: 2 / -2;
+}
