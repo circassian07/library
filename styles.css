@@ -4,6 +4,8 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     padding: 5% 10%;
     height: 100vh;
     background-color: lightblue;
@@ -26,7 +28,9 @@
 /* HEADER */
 
 .header {
-    height: 5vh;
+    height: minmax(5vh,20vh);
+    flex-direction: column;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,13 +38,27 @@
 
 /* BUTTON */
 
-.add_btn {
+#add_btn {
     width: 10vw;
     height: 5vh;
     border-radius: 20px;
     background-color: rgb(204, 77, 27);
     border-style: none;
     color: #fff;
+}
+
+/* FORM */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* CARD STYLING */
