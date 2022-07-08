@@ -1,3 +1,8 @@
+
+:root {
+    --button-color: rgb(204, 77, 27);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@
 
 /* MAIN */
 
-.main {
+#main {
     height: 100%;
     width: 100%;
     margin-top: 2vh;
@@ -38,13 +43,20 @@
 
 /* BUTTON */
 
+button {
+    border-radius: 20px;
+    background-color: var(--button-color);
+    border-style: none;
+    color: #fff;
+}
+.add_button {
+    position: fixed;
+    top: 80vh;
+}
+
 #add_btn {
     width: 10vw;
     height: 5vh;
-    border-radius: 20px;
-    background-color: rgb(204, 77, 27);
-    border-style: none;
-    color: #fff;
 }
 
 /* FORM */
@@ -55,10 +67,27 @@
     display: none;
 }
 
+fieldset {
+
+    padding: 10px;
+    gap: 5px;
+    width: 40vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+#sbt_btn {
+    height: 3vh;
+    width: 20vw;
+    margin: 0 auto;
+    grid-column: 1 / -1;
 }
 
 /* CARD STYLING */
