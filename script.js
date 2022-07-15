@@ -12,6 +12,8 @@ function Book(author, title, pages, read) {
    this.title = title;
    this.pages = pages;
    this.read = read; 
+
+   
 }
 
    // calls up a form to add new objects
