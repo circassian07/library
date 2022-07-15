@@ -13,7 +13,7 @@ function Book(author, title, pages, read) {
    this.pages = pages;
    this.read = read; 
 
-   
+
 }
 
    // calls up a form to add new objects
@@ -57,6 +57,7 @@ function addBookToLibrary() {
             <p>Title: ${myLibrary[i].title}</p>
             <p>Pages: ${myLibrary[i].pages}</p>
             <p>Read: ${myLibrary[i].read}</p>
+            <button type="button" class="tgl_btn" id="toggle${i}" onclick="toggleStatus(${i})"">Read Status</button>
             <button type="button" class="dlt_btn" id="del${i}" onclick="deleteCard(${i})"">Delete</button>
          </div>`;     
       }
@@ -76,6 +77,16 @@ function radioValue () {
       if(readStatus[i].checked) {
          return readStatus[i].value;
       }
+   }
+}
+
+function toggleStatus (i) {
+   if (myLibrary[i].read === "read") {
+      myLibrary[i].read = "haven't read"
+      addBookToLibrary();
+   } else {
+      myLibrary[i].read = "read"
+      addBookToLibrary();
    }
 }
 

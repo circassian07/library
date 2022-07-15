@@ -71,6 +71,11 @@ button {
     padding: 5px;
 }
 
+.tgl_btn {
+    padding: 5px;
+    background-color: green;
+}
+
 /* FORM */
 
 #form {
