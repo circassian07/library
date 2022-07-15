@@ -71,6 +71,7 @@ function deleteCard(i) {
    addBookToLibrary();
 } 
 
+   // checks which radio button is checked
 function radioValue () {
    let readStatus = document.getElementsByName('status')
    for (i=0;i<readStatus.length;i++) {
@@ -80,6 +81,7 @@ function radioValue () {
    }
 }
 
+   //toggles read status
 function toggleStatus (i) {
    if (myLibrary[i].read === "read") {
       myLibrary[i].read = "haven't read"

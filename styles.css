@@ -57,13 +57,14 @@ button {
     color: #fff;
     font-family: 'Oswald', sans-serif;
 }
+
 .add_button {
     position: fixed;
     top: 80vh;
 }
 
 #add_btn {
-    width: 10vw;
+    width: 15vw;
     height: 5vh;
 }
 
