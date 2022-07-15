@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 :root {
     --button-color: rgb(204, 77, 27);
@@ -6,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container {
@@ -14,6 +17,10 @@
     padding: 5% 10%;
     height: 100vh;
     background-color: lightblue;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 /* MAIN */
@@ -48,6 +55,7 @@ button {
     background-color: var(--button-color);
     border-style: none;
     color: #fff;
+    font-family: 'Oswald', sans-serif;
 }
 .add_button {
     position: fixed;
@@ -57,6 +65,10 @@ button {
 #add_btn {
     width: 10vw;
     height: 5vh;
+}
+
+.dlt_btn {
+    padding: 5px;
 }
 
 /* FORM */
@@ -93,7 +105,11 @@ form {
 /* CARD STYLING */
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.205);
+    padding: 10px;
+    justify-content: space-between;
 }

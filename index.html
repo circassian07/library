@@ -12,9 +12,10 @@
         <div class="header">
             <div class="add_button">
                 <button type="button" id="add_btn">Add Book</button>
+
             </div>
             <div id="form">
-                <form action="#"> 
+                <form id="myForm"> 
                     <fieldset>
                         <legend> Enter info about a book </legend>
 
@@ -28,9 +29,9 @@
                         <input type="number" id="pages">
 
                         <label for="read">Read:</label>
-                        <input type="radio" id="read" name="status">
+                        <input type="radio" id="read" name="status" value="read">
                         <label for="unread">Unread:</label>
-                        <input type="radio" id="unread" name="status">
+                        <input type="radio" id="unread" name="status" value="haven't read">
 
                         <button type="submit" id="sbt_btn">Submit</button>
                     </fieldset>
