@@ -7,13 +7,13 @@ const mainContainer = document.getElementById("main")
 
 
    // constructor function
-function Book(author, title, pages, read) {   
-   this.author = author;
-   this.title = title;
-   this.pages = pages;
-   this.read = read; 
-
-
+class Book {
+      constructor(author, title, pages, read) {   
+      this.author = author;
+      this.title = title;
+      this.pages = pages;
+      this.read = read; 
+   }
 }
 
    // calls up a form to add new objects
